@@ -10,9 +10,10 @@ export default function Home() {
       Check in with us to see where we will be next!
       </p>
 
-      <iframe title='fbPost' src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fkeanu.rivera.33%2Fposts%2Fpfbid027wT52uwhSt3HmVGCJ5MwoNqXgeXZvUUqa6mPqNy3janpyoXEVw7pfzU8uXvxw2Bnl&show_text=true&width=500" width="500" height="166"  scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
-   
+      <iframe className='fbPost' title='fbPost' src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fkeanu.rivera.33%2Fposts%2Fpfbid027wT52uwhSt3HmVGCJ5MwoNqXgeXZvUUqa6mPqNy3janpyoXEVw7pfzU8uXvxw2Bnl&show_text=true&width=500"  scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
     </div>
+   
   );
 }
