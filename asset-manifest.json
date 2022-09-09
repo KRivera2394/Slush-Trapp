@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Slush-Trapp/static/css/main.adc6c017.css",
+    "main.js": "/Slush-Trapp/static/js/main.a0a9ce27.js",
+    "static/media/slushBG.jpg": "/Slush-Trapp/static/media/slushBG.0758636c44dee4c58311.jpg",
+    "index.html": "/Slush-Trapp/index.html",
+    "main.adc6c017.css.map": "/Slush-Trapp/static/css/main.adc6c017.css.map",
+    "main.a0a9ce27.js.map": "/Slush-Trapp/static/js/main.a0a9ce27.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.adc6c017.css",
+    "static/js/main.a0a9ce27.js"
+  ]
+}
