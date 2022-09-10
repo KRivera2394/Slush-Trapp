@@ -41,7 +41,7 @@ body {
 }
 
 .homeText {
-  font-size: 1.5em;
+  font-size: 1em;
   text-align: center;
   color: rgb(253, 0, 253);
   text-shadow: 2px 8px 5px rgb(0, 0, 0);
@@ -52,13 +52,35 @@ body {
   /* font-family: 'Kanit', sans-serif; */
 }
 
+
 .fbPost {
-  width: 100vw;
-  height: 25vh;
-  padding-left: 2%;
-  padding-right: 2%;
-  margin-bottom: 10%;
+ 
+  /* width: 100vw; */
+  
+  border:none;
+  
+  
+  /* min-height: 10vh; */
+/* height: 45vh; */
+  /* max-height: 70vh; */
+  /* max-height: 50vh; */
+ /* width: 100vw; */
+ /* height: 30vh; */
+  /* margin-bottom: 6%; */
+  overflow: scroll !important;
 }
+  #fDiv{
+  
+  display: flex;
+  justify-content: center;
+}  
+/* 
+iframe{
+  display: flex;
+  justify-content: center;
+  margin: 0% !important;
+  padding: 0% !important;
+} */
 
 .lineDiv {
   border-top: 1px solid rgb(253, 0, 253);
@@ -80,6 +102,7 @@ body {
   max-width: 100vw;
   /* max-height: 60vh; */
   margin-bottom: 5%;
+  border: 5px solid black;
 }
 
 .homePicLG {

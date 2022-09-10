@@ -6,6 +6,8 @@ import pic4 from '../images/pic4.JPG';
 import pic5 from '../images/pic5.JPG';
 
 
+
+
 export default function Home() {
   return (
     <div className='d-flex flex-column align-items-center mt-5'>
@@ -16,8 +18,9 @@ export default function Home() {
       Check in with us to see where we will be next!
       </p>
 
-
-      <iframe className='fbPost' title='fbPost' src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fkeanu.rivera.33%2Fposts%2Fpfbid027wT52uwhSt3HmVGCJ5MwoNqXgeXZvUUqa6mPqNy3janpyoXEVw7pfzU8uXvxw2Bnl&show_text=true&width=500"  scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+<div id='fDiv'>
+      <iframe    className='fbPost' title='fbPost'  src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FSlushTrap&tabs=timeline&width=500&height=600&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="600"  scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+      </div>
 
 <div className='lineDiv'> HEY </div>
 
