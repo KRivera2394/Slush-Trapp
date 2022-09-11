@@ -11,17 +11,18 @@ import pic5 from '../images/pic5.JPG';
 export default function Home() {
   return (
     <div className='d-flex flex-column align-items-center mt-5'>
-      <h1 className='homeHeading mb-5'>SLUSH TRAP</h1>
-      <p className='homeText px-3'>
-      We're a mobile Slushy and snow cone food truck! 
-      We travel to different locations in the Tampa Bay area!
-      Check in with us to see where we will be next!
+      <h1 className='homeHeading mb-4 '>SLUSH TRAP</h1>
+      <div className='lineDiv lineHead'> HEY </div>
+      
+      <p className='homeText px-3'>Check in with us below to see where we will be next!
       </p>
 
 <div id='fDiv'>
-      <iframe    className='fbPost' title='fbPost'  src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FSlushTrap&tabs=timeline&width=500&height=600&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="600"  scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-      </div>
+      <div class="fb-page fbPost" data-href="https://www.facebook.com/SlushTrap/" data-tabs="timeline" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/SlushTrap/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/SlushTrap/">Slush Trap</a></blockquote></div>
 
+      
+      </div>
+      <h1 className='homeHeading mb-2'>GALLERY</h1>
 <div className='lineDiv'> HEY </div>
 
 <div className='allPics container'>
