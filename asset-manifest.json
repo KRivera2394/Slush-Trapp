@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Slush-Trapp/static/css/main.bc6ac2df.css",
-    "main.js": "/Slush-Trapp/static/js/main.d6c16241.js",
+    "main.js": "/Slush-Trapp/static/js/main.99362646.js",
     "static/media/pic11.JPG": "/Slush-Trapp/static/media/pic11.dc42fccf995c28df48fc.JPG",
     "static/media/pic5.JPG": "/Slush-Trapp/static/media/pic5.0535ddc29af4968a7b47.JPG",
     "static/media/pic12.JPG": "/Slush-Trapp/static/media/pic12.403c1d8f8f34c0ca2778.JPG",
@@ -22,10 +22,10 @@
     "static/media/pic3.JPG": "/Slush-Trapp/static/media/pic3.55a12f8cee2bf70662f2.JPG",
     "index.html": "/Slush-Trapp/index.html",
     "main.bc6ac2df.css.map": "/Slush-Trapp/static/css/main.bc6ac2df.css.map",
-    "main.d6c16241.js.map": "/Slush-Trapp/static/js/main.d6c16241.js.map"
+    "main.99362646.js.map": "/Slush-Trapp/static/js/main.99362646.js.map"
   },
   "entrypoints": [
     "static/css/main.bc6ac2df.css",
-    "static/js/main.d6c16241.js"
+    "static/js/main.99362646.js"
   ]
 }
