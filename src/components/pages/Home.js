@@ -22,7 +22,7 @@ import Carousel from "react-bootstrap/Carousel";
 export default function Home() {
   return (
     <div className="d-flex flex-column align-items-center mt-5">
-      <h1 className="homeHeading mb-5 ">SLUSH TRAP</h1>
+      <h1 className="homeHeading mb-4 ">SLUSH TRAP</h1>
       {/* <div className='lineDiv lineHead'> HEY </div> */}
 
       <p className="homeText px-3">
@@ -32,10 +32,10 @@ export default function Home() {
       <i class="fa-solid fa-arrow-down homeText arrow"></i>
 
       <div id="fDiv">
-      <iframe title="fb" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FSlushTrap%2Fposts%2Fpfbid0xAm6qSpfLSrPzP3LhJUnYG8mfbQvjSoKfgji1xQrES357azEt81UtoLmXpNu9Bxsl&width=auto&show_text=true&height=100&appId" width="350" height="110" scrolling="no" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+      <iframe className="mb-3" title="fb" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FSlushTrap%2Fposts%2Fpfbid0xAm6qSpfLSrPzP3LhJUnYG8mfbQvjSoKfgji1xQrES357azEt81UtoLmXpNu9Bxsl&width=auto&show_text=true&height=100&appId" width="350" height="110" scrolling="no" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
       </div>
 
-      <h1 className="homeHeading mb-5">GALLERY</h1>
+      <h1 className="homeHeading mb-1">GALLERY</h1>
       {/* <div className='lineDiv'> HEY </div> */}
 
      <div className="d-flex">
