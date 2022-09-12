@@ -39,7 +39,7 @@ export default function Home() {
       {/* <div className='lineDiv'> HEY </div> */}
 
      <div className="d-flex">
-        <Carousel className="theCaro">
+        <Carousel fade={true} className="theCaro">
           <Carousel.Item>
             <img className="homePic" src={pic1} alt="pic" />
           </Carousel.Item>
