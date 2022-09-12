@@ -16,7 +16,7 @@ body {
 }
 
 .wholeNav > .headerTitle {
-  color: rgb(255, 4, 255);
+  color: rgba(255, 4, 255, 0.901);
 }
 
 .aboutHeader {
@@ -29,6 +29,14 @@ body {
   color: rgb(255, 4, 255);
 }
 
+.headerTitle + .navbar-toggler{
+  border: 1px solid rgb(255, 4, 255) ;
+}
+.navbar-toggler-icon{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 4, 255, 0.901)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important; 
+
+}
+
 /* HOME */
 
 .homeHeading {
@@ -38,6 +46,12 @@ body {
   color: rgb(255, 4, 255);
   -webkit-text-stroke-width: 1.1px;
   -webkit-text-stroke-color: rgba(10, 9, 10, 0.657);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgba(255, 3, 255, 0.017) ;
+  
+ 
+  
 }
 
 .homeText {
@@ -46,6 +60,8 @@ body {
   color: rgb(253, 0, 253);
   text-shadow: 2px 8px 5px rgb(0, 0, 0);
   /* word-wrap: break-word; */
+  
+  
   text-align: center;
   -webkit-text-stroke-width: 1.1px;
   -webkit-text-stroke-color: rgba(10, 9, 10, 0.657);
@@ -57,6 +73,7 @@ body {
  
   width: 150% !important;
   display: flex !important;
+  
  
   
   
@@ -71,14 +88,16 @@ body {
 }
 
 .fb_iframe_widget{
+  
   display: flex ;
   justify-content: center;
 
 }
   #fDiv{
+    
     width: 150%;
     margin-top: 2.5%;
-  margin-bottom: 2.5%;
+  margin-bottom: 8.5%;
   display: flex;
   justify-content: center;
 }  
@@ -90,17 +109,17 @@ iframe{
   padding: 0% !important;
 } */
 
-.lineDiv {
-  /* border-top: 1px solid rgb(253, 0, 253); */
+/* .lineDiv {
+  border-top: 1px solid rgb(253, 0, 253);
   border-top: 2px groove rgba(253, 0, 253, 0.63);
   width: 60%;
   text-align: center;
   color: rgba(240, 248, 255, 0);
-}
+} */
 
-.lineHead{
+/* .lineHead{
   width: 75%;
-}
+} */
 
 .allPics {
   display: flex;
@@ -115,13 +134,33 @@ iframe{
   max-width: 100vw;
   /* max-height: 60vh; */
   margin-bottom: 5%;
-  border: 5px solid black;
+  border: 5px solid rgba(0, 0, 0, 0.34);
 }
 
 .homePicLG {
   max-width: 50vw !important;
   max-height: 85vh;
   margin-bottom: 5%;
+  border: 5px solid rgba(0, 0, 0, 0.34);
+}
+
+.menuUL{
+  list-style: none;
+  text-align: center;
+  padding: 0%;
+font-size: 1.3em;
+
+}
+
+.scFlavors{
+  text-align: center;
+  font-size: 1.5em;
+}
+
+
+
+.firstCaro{
+  transition: all 1s;
 }
 
 @media screen and (min-width: 900px) {
