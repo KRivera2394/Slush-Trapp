@@ -7,12 +7,16 @@ import pic5 from "../images/pic5.JPG";
 import pic6 from "../images/pic6.JPG";
 import pic7 from "../images/pic7.JPG";
 import pic8 from "../images/pic8.JPG";
+import pic9 from "../images/pic15.JPG";
 import pic10 from "../images/pic10.JPG";
 import pic11 from "../images/pic11.JPG";
 import pic12 from "../images/pic12.JPG";
 import pic13 from "../images/pic13.JPG";
 import pic14 from "../images/pic14.JPG";
 import pic15 from "../images/pic15.JPG";
+import pic16 from "../images/pic16.JPG";
+import pic17 from "../images/pic17.JPG";
+import pic18 from "../images/pic18.JPG";
 import Carousel from "react-bootstrap/Carousel";
 
 export default function Home() {
@@ -92,6 +96,18 @@ export default function Home() {
           </Carousel.Item>
           <Carousel.Item>
             <img className="homePic" src={pic15} alt="pic" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="homePic" src={pic16} alt="pic" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="homePic" src={pic17} alt="pic" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="homePic" src={pic18} alt="pic" />
+            <Carousel.Item>
+            <img className="homePic" src={pic9} alt="pic" />
+          </Carousel.Item>
           </Carousel.Item>
         </Carousel>
       </div>
