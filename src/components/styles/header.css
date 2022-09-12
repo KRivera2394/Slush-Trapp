@@ -67,6 +67,10 @@ body {
   -webkit-text-stroke-color: rgba(10, 9, 10, 0.657);
   /* font-family: 'Kanit', sans-serif; */
 }
+.arrow{
+  color: rgb(8, 238, 250);
+
+}
 
 
 .fbPost {
@@ -129,15 +133,19 @@ iframe{
   justify-content: center;
   gap: 2%;
   /* height: 80vh; */
+  width: 100%;
 }
 
 .homePic {
-  flex: 0 1 80%;
-  max-width: 95vw;
+  width: 100%;
+  /* max-width: 100vw; */
   /* max-height: 60vh; */
   margin-bottom: 5%;
   border: 5px solid rgba(0, 0, 0, 0.34);
-  height: 70vh;
+  /* height: 50vh; */
+}
+.theCaro{
+  width: 100% !important;
 }
 
 .homePicLG {

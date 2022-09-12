@@ -26,35 +26,20 @@ export default function Home() {
       {/* <div className='lineDiv lineHead'> HEY </div> */}
 
       <p className="homeText px-3">
-        Check in with us below to see where we will be next!
+        Check in with us below to see where we will be Today!
+       
       </p>
+      <i class="fa-solid fa-arrow-down homeText arrow"></i>
 
       <div id="fDiv">
-        <div
-          class="fb-page fbPost"
-          data-href="https://www.facebook.com/SlushTrap/"
-          data-tabs="timeline"
-          data-width=""
-          data-height=""
-          data-small-header="true"
-          data-adapt-container-width="true"
-          data-hide-cover="false"
-          data-show-facepile="true"
-        >
-          <blockquote
-            cite="https://www.facebook.com/SlushTrap/"
-            class="fb-xfbml-parse-ignore"
-          >
-            <a href="https://www.facebook.com/SlushTrap/">Slush Trap</a>
-          </blockquote>
-        </div>
+      <iframe title="fb" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FSlushTrap%2Fposts%2Fpfbid0xAm6qSpfLSrPzP3LhJUnYG8mfbQvjSoKfgji1xQrES357azEt81UtoLmXpNu9Bxsl&width=auto&show_text=true&height=100&appId" width="350" height="110" scrolling="no" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
       </div>
 
       <h1 className="homeHeading mb-5">GALLERY</h1>
       {/* <div className='lineDiv'> HEY </div> */}
 
-      <div className="allPics container">
-        <Carousel>
+     <div className="d-flex">
+        <Carousel className="theCaro">
           <Carousel.Item>
             <img className="homePic" src={pic1} alt="pic" />
           </Carousel.Item>
@@ -110,7 +95,8 @@ export default function Home() {
           </Carousel.Item>
           </Carousel.Item>
         </Carousel>
-      </div>
+        </div>
+      
     </div>
   );
 }
