@@ -133,7 +133,7 @@ iframe{
 
 .homePic {
   flex: 0 1 80%;
-  max-width: 90vw;
+  max-width: 95vw;
   /* max-height: 60vh; */
   margin-bottom: 5%;
   border: 5px solid rgba(0, 0, 0, 0.34);
