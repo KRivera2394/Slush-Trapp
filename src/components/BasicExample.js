@@ -16,7 +16,10 @@ function BasicExample({ currentPage, handlePageChange }) {
           <Nav className='homeAndAboutContainer'>
             <Nav.Link id='homeNav' href="#home" onClick={() => handlePageChange('Home')} className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'} >Home</Nav.Link>
             <Nav.Link className='aboutHeader'  href="#about"
-          onClick={() => handlePageChange('About')}>About</Nav.Link>
+          onClick={() => handlePageChange('About')}>Menu</Nav.Link>
+            
+            {/* <Nav.Link className='aboutHeader'  href="#about"
+          onClick={() => handlePageChange('About')}>About</Nav.Link> */}
             
           </Nav>
         </Navbar.Collapse>
