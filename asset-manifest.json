@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Slush-Trapp/static/css/main.bc6ac2df.css",
-    "main.js": "/Slush-Trapp/static/js/main.0f2c5155.js",
+    "main.css": "/Slush-Trapp/static/css/main.f084ed48.css",
+    "main.js": "/Slush-Trapp/static/js/main.fe2ce0b1.js",
     "static/media/pic11.JPG": "/Slush-Trapp/static/media/pic11.dc42fccf995c28df48fc.JPG",
     "static/media/pic5.JPG": "/Slush-Trapp/static/media/pic5.0535ddc29af4968a7b47.JPG",
     "static/media/pic12.JPG": "/Slush-Trapp/static/media/pic12.403c1d8f8f34c0ca2778.JPG",
@@ -10,6 +10,7 @@
     "static/media/pic8.JPG": "/Slush-Trapp/static/media/pic8.6601ecaa5fcc5c68c40d.JPG",
     "static/media/pic16.JPG": "/Slush-Trapp/static/media/pic16.da006e8a5cbd597c1b18.JPG",
     "static/media/pic13.JPG": "/Slush-Trapp/static/media/pic13.1485a4956fd1d5acdd99.JPG",
+    "static/media/thirdLog.png": "/Slush-Trapp/static/media/thirdLog.d860124583dd97566872.png",
     "static/media/pic14.JPG": "/Slush-Trapp/static/media/pic14.2a22f7946e6e2156fe88.JPG",
     "static/media/pic1.JPG": "/Slush-Trapp/static/media/pic1.b33b18c793478b1ca5a3.JPG",
     "static/media/pic4.JPG": "/Slush-Trapp/static/media/pic4.49358a41978f1d6670d8.JPG",
@@ -21,11 +22,11 @@
     "static/media/pic17.JPG": "/Slush-Trapp/static/media/pic17.a6c6b67e71450f896554.JPG",
     "static/media/pic3.JPG": "/Slush-Trapp/static/media/pic3.55a12f8cee2bf70662f2.JPG",
     "index.html": "/Slush-Trapp/index.html",
-    "main.bc6ac2df.css.map": "/Slush-Trapp/static/css/main.bc6ac2df.css.map",
-    "main.0f2c5155.js.map": "/Slush-Trapp/static/js/main.0f2c5155.js.map"
+    "main.f084ed48.css.map": "/Slush-Trapp/static/css/main.f084ed48.css.map",
+    "main.fe2ce0b1.js.map": "/Slush-Trapp/static/js/main.fe2ce0b1.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc6ac2df.css",
-    "static/js/main.0f2c5155.js"
+    "static/css/main.f084ed48.css",
+    "static/js/main.fe2ce0b1.js"
   ]
 }
