@@ -36,33 +36,33 @@ export default function Home() {
       {/* <img className="newLog" src={slushLogo} width="250" alt="logo"/> */}
       <motion.img
     
-      initial={{ y: -500}} 
+      initial={{ y: -1000}} 
       animate={{y: 0}}
        transition={{ delay: 0.3, duration: 1.0, type: 'spring', stiffness:70}}
       className="newLog" src={slushLogo} width="250" alt="logo" />
 <div class="social-menu">
         <ul>
             <motion.li
-             initial={{ y: -500}} 
+             initial={{ y: -1000}} 
              animate={{y: 0}}
               transition={{ delay: 0.3, duration: 1.0, type: 'tween'}}
             
             ><a href="https://www.instagram.com/slush_trap/" target="blank"><i class="fab fa-instagram"></i></a></motion.li>
             <motion.li
-             initial={{ y: -500}} 
+             initial={{ y: -1000}} 
              animate={{y: 0}}
               transition={{ delay: 0.4, duration: 1.0, type: 'tween'}}
             
             ><a href="https://www.linkedin.com/in/sanket-bodake-995b5b205/" target="blank"><i class="fab fa-snapchat"></i></a></motion.li>
             <motion.li
-             initial={{ y: -500}} 
+             initial={{ y: -1000}} 
              animate={{y: 0}}
               transition={{ delay: 0.5, duration: 1.0, type: 'tween'}}
             
             ><a href="https://www.facebook.com/SlushTrap/"><i class="fab fa-facebook" target="blank"></i></a></motion.li>
             
             <motion.li
-             initial={{ y: -500}} 
+             initial={{ y: -1000}} 
              animate={{y: 0}}
               transition={{ delay: 0.6, duration: 1.0, type: 'tween'}}
             
@@ -73,14 +73,14 @@ export default function Home() {
       {/* <div className='lineDiv lineHead'> HEY </div> */}
 
       <motion.p
-      initial={{ y: -500}} 
+      initial={{ y: -1000}} 
       animate={{y: 0}}
        transition={{ delay: 0.2, duration: 1.0, type: 'spring', stiffness:70}}
       className="homeText px-3">
         Check in with us below to see where we will be Today!
       </motion.p>
       <motion.i 
-       initial={{ y: -500}} 
+       initial={{ y: -1000}} 
        animate={{y: 0}}
         transition={{ delay: 0.1, duration: 1.0, type: 'spring', stiffness:70}}
         
