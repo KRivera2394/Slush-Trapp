@@ -10,7 +10,7 @@ function BasicExample({ currentPage, handlePageChange }) {
   return (
     <Navbar collapseOnSelect  bg="dark" expand="xl">
       <Container className='wholeNav'>
-        <Navbar.Brand className='headerTitle'  href="#home">Slush-Trap</Navbar.Brand>
+        <Navbar.Brand className='headerTitle'  href="#home">Slush Trap</Navbar.Brand>
         <Navbar.Toggle className='outHeader' aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className='aboutHeader' id="basic-navbar-nav">
           <Nav className='homeAndAboutContainer'>
