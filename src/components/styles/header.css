@@ -9,6 +9,15 @@ body {
   background-size: cover;
 }
 
+/* LOGO */
+
+.newLog{
+  background-color: whitesmoke;
+  border-radius: 80%;
+}
+
+
+
 /* HEADER */
 .wholeNav > * {
   font-size: 2.5em !important;
@@ -69,6 +78,7 @@ body {
 }
 .arrow{
   color: rgb(8, 238, 250);
+  z-index: -1;
 
 }
 
@@ -173,10 +183,11 @@ padding-left: 0.4rem;
 }
 
 .menuUL > li{
-  width: 80%;
-  text-align: start;
-  -webkit-text-stroke-width: 1.1px;
-  -webkit-text-stroke-color: rgba(10, 9, 10, 0.657);
+  width: auto;
+  text-align: center;
+  align-self: center;
+  align-items: center;
+  
 
 }
 .menuList{
@@ -196,8 +207,7 @@ padding-left: 0.4rem;
   color: rgb(253, 0, 253) !important;
   text-align: center;
   font-size: 2em;
-  -webkit-text-stroke-width: 1.1px;
-  -webkit-text-stroke-color: rgba(10, 9, 10, 0.657);
+ 
 }
 
 
@@ -262,6 +272,269 @@ border: 1px solid rgba(0, 0, 0, 0.3) !important;
     width: 45vw;
   }
 }
+
+
+@media screen and (max-width: 1000px) {
+  
+  * {
+    font-family: "Permanent Marker", cursive;
+  }
+  
+  body {
+    background-image: url(../images/slushBGPortrait.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+
+
+  .wholeNav > * {
+    font-size: 2.5em !important;
+    color: rgb(255, 4, 255);
+  }
+  
+  .wholeNav > .headerTitle {
+    color: rgba(255, 4, 255, 0.901);
+  }
+  
+  .aboutHeader {
+    align-content: flex-end !important;
+    flex-grow: 0 !important;
+  }
+  
+  .aboutHeader > .homeAndAboutContainer > #homeNav,
+  #homeNav + a {
+    color: rgb(255, 4, 255);
+  }
+  
+  .headerTitle + .navbar-toggler{
+    border: 1px solid rgb(255, 4, 255) ;
+  }
+  .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 4, 255, 0.901)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important; 
+  
+  }
+  
+  /* HOME */
+  
+  .homeHeading {
+    font-size: 3em;
+    /* text-decoration: underline; */
+    text-shadow: 2px 8px 5px rgba(0, 0, 0, 0.716);
+    color: rgb(255, 4, 255);
+    -webkit-text-stroke-width: 1.1px;
+    -webkit-text-stroke-color: rgba(10, 9, 10, 0.657);
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgba(255, 3, 255, 0.017) ;
+    
+   
+    
+  }
+  
+  .homeText {
+    font-size: 1.8em;
+    text-align: center;
+    color: rgb(253, 0, 253);
+    text-shadow: 2px 8px 5px rgb(0, 0, 0);
+    /* word-wrap: break-word; */
+    
+    
+    text-align: center;
+    /* -webkit-text-stroke-width: 1.1px;
+    -webkit-text-stroke-color: rgba(10, 9, 10, 0.657); */
+    /* font-family: 'Kanit', sans-serif; */
+  }
+  .arrow{
+    color: rgb(8, 238, 250);
+  
+  }
+  
+  
+  .fbPost {
+   
+    width: 150% !important;
+    display: flex !important;
+    
+   
+    
+    
+    /* min-height: 10vh; */
+  /* height: 45vh; */
+    /* max-height: 70vh; */
+    /* max-height: 50vh; */
+   /* width: 100vw; */
+   /* height: 30vh; */
+    /* margin-bottom: 6%; */
+    
+  }
+  
+  .fb_iframe_widget{
+    
+    display: flex ;
+    justify-content: center;
+  
+  }
+    #fDiv{
+      
+      width: 100%;
+      
+      margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    display: flex;
+    justify-content: center;
+  }  
+  /* 
+  iframe{
+    display: flex;
+    justify-content: center;
+    margin: 0% !important;
+    padding: 0% !important;
+  } */
+  
+  /* .lineDiv {
+    border-top: 1px solid rgb(253, 0, 253);
+    border-top: 2px groove rgba(253, 0, 253, 0.63);
+    width: 60%;
+    text-align: center;
+    color: rgba(240, 248, 255, 0);
+  } */
+  
+  /* .lineHead{
+    width: 75%;
+  } */
+  
+  .allPics {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+    /* height: 80vh; */
+    width: 100%;
+  }
+  
+  .homePic {
+    width: 100%;
+    /* max-width: 100vw; */
+    /* max-height: 60vh; */
+    margin-bottom: 5%;
+    border: 5px solid rgba(0, 0, 0, 0.34);
+    /* height: 50vh; */
+  }
+  .theCaro{
+    width: 100% !important;
+  }
+  
+  .homePicLG {
+    /* max-width: 50vw !important; */
+    max-height: 50vh;
+    margin-bottom: 5%;
+    border: 5px solid rgba(0, 0, 0, 0.34);
+  }
+  
+  .menuUL{
+    /* list-style: none; */
+    text-align: center;
+    /* padding: 0%; */
+  font-size: 2em;
+  color: rgb(253, 0, 253);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding-left: 0.4rem;
+  
+  
+  
+  }
+  
+  .menuUL > li{
+    width: 80%;
+    text-align: start;
+    
+  
+  }
+  .menuList{
+    text-align: center;
+  }
+  
+  .menuCont{
+    gap: 2% ;
+    flex-wrap: wrap;
+    /* margin-bottom: 10%; */
+    
+    
+  }
+  
+  
+  .scFlavors{
+    color: rgb(253, 0, 253) !important;
+    text-align: center;
+    font-size: 2em;
+   
+  }
+  
+  
+  .card-header{
+    border-bottom: 2px groove rgba(255, 14, 203, 0) !important;
+    color: rgb(243, 6, 243) !important;
+    
+  }
+  
+  .menuBack{
+    flex: 1 0 50%;
+    margin-bottom: 5%;
+  background-color: rgba(16, 13, 13, 0.504) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(5px) !important;
+  -webkit-backdrop-filter: blur(5px) !important;
+  border: 1px solid rgba(0, 0, 0, 0.3) !important;
+  }
+  .card{
+    border: 2px solid rgba(253, 0, 253, 0.393) !important;
+  }
+  
+  .menPrice{
+    color: rgb(247, 247, 247);
+  }
+  
+  .genMen{
+    list-style: none;
+    
+    
+  }
+  
+  .cashPay{
+    color: rgb(7, 197, 7);
+  }
+  
+  .genMen > li {
+    text-align: center;
+    width: 100%;
+    
+  }
+  
+  
+  
+  .meB{
+    margin-bottom: 5%;
+  }
+  
+  
+  .firstCaro{
+    transition: all 1s;
+  }
+
+
+}
+
+
+
+
 
 @media screen and (max-width: 850px) {
   .fbPost {

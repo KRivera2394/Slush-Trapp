@@ -17,37 +17,76 @@ import pic15 from "../images/pic15.JPG";
 import pic16 from "../images/pic16.JPG";
 import pic17 from "../images/pic17.JPG";
 import pic18 from "../images/pic18.JPG";
+import slushLogo from "../images/thirdLog.png";
 import Carousel from "react-bootstrap/Carousel";
+import { motion, useTime, useTransform } from "framer-motion";
+
+
+
 
 export default function Home() {
+  const time = useTime();
+  
+const rotate = useTransform(time, [ 1000,0 ], [ 360,0 ] ,{ clamp: true });
   return (
-    <div className="d-flex flex-column align-items-center mt-5">
-      <h1 className="homeHeading mb-4 ">SLUSH TRAP</h1>
+    <div
+    
+    
+    className="d-flex flex-column align-items-center mt-5">
+      {/* <img className="newLog" src={slushLogo} width="250" alt="logo"/> */}
+      <motion.img
+      style={{ rotate }}
+      initial={{ y: -400}} 
+      animate={{y: 0,
+                rotate: 360}}
+       transition={{ delay: 0.1, duration: 1.0, type: 'spring', stiffness:70}}
+      className="newLog" src={slushLogo} width="250" alt="logo" />
+
+      {/* <h1 className="homeHeading mb-4 ">SLUSH TRAP</h1> */}
       {/* <div className='lineDiv lineHead'> HEY </div> */}
 
       <p className="homeText px-3">
         Check in with us below to see where we will be Today!
-       
       </p>
-      <i class="fa-solid fa-arrow-down homeText arrow"></i>
+      <motion.i 
+       initial={{y: -1000}}
+      animate={{y:0}}
+      
+        transition={{ delay: 0.3, duration: 2.0, type: 'tween'}}
+        
+      className="fa-solid fa-arrow-down homeText arrow"></motion.i>
 
-      <div id="fDiv">
-      <iframe className="mb-3" title="fb" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FSlushTrap%2Fposts%2Fpfbid0xAm6qSpfLSrPzP3LhJUnYG8mfbQvjSoKfgji1xQrES357azEt81UtoLmXpNu9Bxsl&width=auto&show_text=true&height=100&appId" width="350" height="110" scrolling="no" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-      </div>
+      <motion.div 
+      initial={{ x: -500}} 
+      animate={{x: 0}}
+      transition={{ delay: 0.5, duration: 2.2, type: 'spring'}}
+      id="fDiv">
+        <iframe
+          className="mb-3"
+          title="fb"
+          src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FSlushTrap%2Fposts%2Fpfbid0xAm6qSpfLSrPzP3LhJUnYG8mfbQvjSoKfgji1xQrES357azEt81UtoLmXpNu9Bxsl&width=auto&show_text=true&height=100&appId"
+          width="350"
+          height="110"
+          scrolling="no"
+          frameBorder="0"
+          allowFullScreen={true}
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+        ></iframe>
+      </motion.div>
 
       <h1 className="homeHeading mb-1">GALLERY</h1>
       {/* <div className='lineDiv'> HEY </div> */}
 
-     <div className="d-flex">
+      <div className="d-flex">
         <Carousel fade={true} className="theCaro">
           <Carousel.Item>
             <img className="homePic" src={pic1} alt="pic" />
           </Carousel.Item>
           <Carousel.Item>
-            <img className="homePic" src={pic2} alt="pic" />
+            <img className="homePic " src={pic2} alt="pic" />
           </Carousel.Item>
           <Carousel.Item>
-            <img className="homePic" src={pic3} alt="pic" />
+            <img className="homePic " src={pic3} alt="pic" />
           </Carousel.Item>
           <Carousel.Item>
             <img className="homePic" src={pic4} alt="pic" />
@@ -91,12 +130,11 @@ export default function Home() {
           <Carousel.Item>
             <img className="homePic" src={pic18} alt="pic" />
             <Carousel.Item>
-            <img className="homePic" src={pic9} alt="pic" />
-          </Carousel.Item>
+              <img className="homePic" src={pic9} alt="pic" />
+            </Carousel.Item>
           </Carousel.Item>
         </Carousel>
-        </div>
-      
+      </div>
     </div>
   );
 }
