@@ -57,7 +57,7 @@ const rotate = useTransform(time, [ 1000,0 ], [ 360,0 ] ,{ clamp: true });
       className="fa-solid fa-arrow-down homeText arrow"></motion.i>
 
       <motion.div 
-      initial={{ x: -500}} 
+      initial={{ x: -1500}} 
       animate={{x: 0}}
       transition={{ delay: 0.5, duration: 2.2, type: 'spring'}}
       id="fDiv">

@@ -1,7 +1,7 @@
 import React from "react";
 import { motion} from "framer-motion";
 
-export default function About() {
+export default function Menu() {
   return (
     <div>
       <div id="menu">
