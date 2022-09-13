@@ -53,9 +53,9 @@ body {
   /* text-decoration: underline; */
   text-shadow: 2px 8px 5px rgba(0, 0, 0, 0.716);
   color: rgb(255, 4, 255);
-  -webkit-text-stroke-width: 1.1px;
-  -webkit-text-stroke-color: rgba(10, 9, 10, 0.657);
-  text-decoration: underline;
+  /* -webkit-text-stroke-width: 1.1px;
+  -webkit-text-stroke-color: rgba(10, 9, 10, 0.657); */
+  /* text-decoration: underline; */
   text-underline-offset: 1rem;
   text-decoration-color: rgba(255, 3, 255, 0.017) ;
   
@@ -323,9 +323,8 @@ border: 1px solid rgba(0, 0, 0, 0.3) !important;
     /* text-decoration: underline; */
     text-shadow: 2px 8px 5px rgba(0, 0, 0, 0.716);
     color: rgb(255, 4, 255);
-    -webkit-text-stroke-width: 1.1px;
-    -webkit-text-stroke-color: rgba(10, 9, 10, 0.657);
-    text-decoration: underline;
+    
+    /* text-decoration: underline; */
     text-underline-offset: 1rem;
     text-decoration-color: rgba(255, 3, 255, 0.017) ;
     
