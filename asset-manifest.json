@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Slush-Trapp/static/css/main.8c0b7b1f.css",
-    "main.js": "/Slush-Trapp/static/js/main.e988999b.js",
+    "main.css": "/Slush-Trapp/static/css/main.47c6d7cb.css",
+    "main.js": "/Slush-Trapp/static/js/main.d5856e6b.js",
     "static/media/pic11.JPG": "/Slush-Trapp/static/media/pic11.dc42fccf995c28df48fc.JPG",
     "static/media/pic5.JPG": "/Slush-Trapp/static/media/pic5.0535ddc29af4968a7b47.JPG",
     "static/media/pic12.JPG": "/Slush-Trapp/static/media/pic12.403c1d8f8f34c0ca2778.JPG",
@@ -22,11 +22,11 @@
     "static/media/pic17.JPG": "/Slush-Trapp/static/media/pic17.a6c6b67e71450f896554.JPG",
     "static/media/pic3.JPG": "/Slush-Trapp/static/media/pic3.55a12f8cee2bf70662f2.JPG",
     "index.html": "/Slush-Trapp/index.html",
-    "main.8c0b7b1f.css.map": "/Slush-Trapp/static/css/main.8c0b7b1f.css.map",
-    "main.e988999b.js.map": "/Slush-Trapp/static/js/main.e988999b.js.map"
+    "main.47c6d7cb.css.map": "/Slush-Trapp/static/css/main.47c6d7cb.css.map",
+    "main.d5856e6b.js.map": "/Slush-Trapp/static/js/main.d5856e6b.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c0b7b1f.css",
-    "static/js/main.e988999b.js"
+    "static/css/main.47c6d7cb.css",
+    "static/js/main.d5856e6b.js"
   ]
 }
