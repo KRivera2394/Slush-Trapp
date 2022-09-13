@@ -42,11 +42,31 @@ export default function Home() {
       className="newLog" src={slushLogo} width="250" alt="logo" />
 <div class="social-menu">
         <ul>
-            <li><a href="https://www.instagram.com/slush_trap/" target="blank"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/sanket-bodake-995b5b205/" target="blank"><i class="fab fa-snapchat"></i></a></li>
-            <li><a href="https://www.facebook.com/SlushTrap/"><i class="fab fa-facebook" target="blank"></i></a></li>
+            <motion.li
+             initial={{ y: -500}} 
+             animate={{y: 0}}
+              transition={{ delay: 0.3, duration: 1.0, type: 'tween'}}
             
-            <li><a href="https://github.com/krivera2394" target="blank"><i class="fab fa-github"/></a></li>
+            ><a href="https://www.instagram.com/slush_trap/" target="blank"><i class="fab fa-instagram"></i></a></motion.li>
+            <motion.li
+             initial={{ y: -500}} 
+             animate={{y: 0}}
+              transition={{ delay: 0.4, duration: 1.0, type: 'tween'}}
+            
+            ><a href="https://www.linkedin.com/in/sanket-bodake-995b5b205/" target="blank"><i class="fab fa-snapchat"></i></a></motion.li>
+            <motion.li
+             initial={{ y: -500}} 
+             animate={{y: 0}}
+              transition={{ delay: 0.5, duration: 1.0, type: 'tween'}}
+            
+            ><a href="https://www.facebook.com/SlushTrap/"><i class="fab fa-facebook" target="blank"></i></a></motion.li>
+            
+            <motion.li
+             initial={{ y: -500}} 
+             animate={{y: 0}}
+              transition={{ delay: 0.6, duration: 1.0, type: 'tween'}}
+            
+            ><a href="https://github.com/krivera2394" target="blank"><i class="fab fa-github"/></a></motion.li>
         </ul>
     </div>
       {/* <h1 className="homeHeading mb-4 ">SLUSH TRAP</h1> */}
