@@ -191,7 +191,9 @@ padding-left: 0.4rem;
 
 }
 .menuList{
+  margin-top: 2.5%;
   text-align: center;
+  color: aqua;
 }
 
 .menuCont{
@@ -287,8 +289,16 @@ border: 1px solid rgba(0, 0, 0, 0.3) !important;
     background-size: cover;
   }
   
-
-
+  /* LOGO */
+  
+  .newLog{
+    background-color: whitesmoke;
+    border-radius: 80%;
+  }
+  
+  
+  
+  /* HEADER */
   .wholeNav > * {
     font-size: 2.5em !important;
     color: rgb(255, 4, 255);
@@ -323,7 +333,8 @@ border: 1px solid rgba(0, 0, 0, 0.3) !important;
     /* text-decoration: underline; */
     text-shadow: 2px 8px 5px rgba(0, 0, 0, 0.716);
     color: rgb(255, 4, 255);
-    
+    /* -webkit-text-stroke-width: 1.1px;
+    -webkit-text-stroke-color: rgba(10, 9, 10, 0.657); */
     /* text-decoration: underline; */
     text-underline-offset: 1rem;
     text-decoration-color: rgba(255, 3, 255, 0.017) ;
@@ -347,6 +358,7 @@ border: 1px solid rgba(0, 0, 0, 0.3) !important;
   }
   .arrow{
     color: rgb(8, 238, 250);
+    z-index: -1;
   
   }
   
@@ -451,13 +463,17 @@ border: 1px solid rgba(0, 0, 0, 0.3) !important;
   }
   
   .menuUL > li{
-    width: 80%;
-    text-align: start;
+    width: auto;
+    text-align: center;
+    align-self: center;
+    align-items: center;
     
   
   }
   .menuList{
+    margin-top: 2.5%;
     text-align: center;
+    color: aqua;
   }
   
   .menuCont{
@@ -527,8 +543,6 @@ border: 1px solid rgba(0, 0, 0, 0.3) !important;
   .firstCaro{
     transition: all 1s;
   }
-
-
 }
 
 
