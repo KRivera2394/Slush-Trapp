@@ -40,7 +40,15 @@ export default function Home() {
       animate={{y: 0}}
        transition={{ delay: 0.3, duration: 1.0, type: 'spring', stiffness:70}}
       className="newLog" src={slushLogo} width="250" alt="logo" />
-
+<div class="social-menu">
+        <ul>
+            <li><a href="https://www.instagram.com/slush_trap/" target="blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/sanket-bodake-995b5b205/" target="blank"><i class="fab fa-snapchat"></i></a></li>
+            <li><a href="https://www.facebook.com/SlushTrap/"><i class="fab fa-facebook" target="blank"></i></a></li>
+            
+            <li><a href="https://github.com/krivera2394" target="blank"><i class="fab fa-github"/></a></li>
+        </ul>
+    </div>
       {/* <h1 className="homeHeading mb-4 ">SLUSH TRAP</h1> */}
       {/* <div className='lineDiv lineHead'> HEY </div> */}
 
@@ -76,7 +84,7 @@ export default function Home() {
         ></iframe>
       </motion.div>
 
-      <h1 className="homeHeading mb-1">GALLERY</h1>
+      {/* <h1 className="homeHeading mb-1">GALLERY</h1> */}
       {/* <div className='lineDiv'> HEY </div> */}
 
       <div className="d-flex">
@@ -136,7 +144,11 @@ export default function Home() {
             </Carousel.Item>
           </Carousel.Item>
         </Carousel>
+
+       
+
       </div>
+      
     </div>
   );
 }
