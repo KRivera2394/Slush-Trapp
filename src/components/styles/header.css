@@ -12,7 +12,7 @@ body {
 /* LOGO */
 
 .newLog{
-  background-color: whitesmoke;
+  background-color: rgb(255, 255, 255);
   border-radius: 80%;
 }
 
@@ -35,6 +35,11 @@ body {
 
 .aboutHeader > .homeAndAboutContainer > #homeNav,
 #homeNav + a {
+  color: rgb(255, 4, 255);
+}
+
+.aboutHeader > .homeAndAboutContainer > #homeNav,
+#homeNav + a + a {
   color: rgb(255, 4, 255);
 }
 
@@ -214,8 +219,9 @@ padding-left: 0.4rem;
 
 
 .card-header{
-  border-bottom: 2px groove rgba(255, 14, 203, 0) !important;
+  border-bottom: none thin rgba(255, 14, 203, 0) !important;
   color: rgb(243, 6, 243) !important;
+  background-color: #a206b600 !important;
   
 }
 
@@ -265,7 +271,7 @@ border: 1px solid rgba(0, 0, 0, 0.3) !important;
 }
 
 
-/* FOOTER */
+/* SOCIAL MEDIA ICONS */
 .social-menu ul{
   /* position: relative; */
   /* top: 50%;
@@ -285,7 +291,7 @@ border: 1px solid rgba(0, 0, 0, 0.3) !important;
   font-size: 30px;
   line-height: 60px;
   transition: .3s;
-  color: #000;
+  color: rgb(255, 255, 255);
 }
 
 .social-menu ul li .fab:hover{
@@ -298,7 +304,7 @@ border: 1px solid rgba(0, 0, 0, 0.3) !important;
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: rgba(91, 34, 83, 0.515);
   text-align: center;
   transition: .6s;
   box-shadow: 0 5px 4px rgba(0,0,0,.5);
@@ -309,17 +315,27 @@ border: 1px solid rgba(0, 0, 0, 0.3) !important;
 }
 
 .social-menu ul li:nth-child(1) a:hover{
-  background-color: rgba(0, 0, 0, 0.829);
+  background-color: #a106b6;
 }
 .social-menu ul li:nth-child(2) a:hover{
-  background-color: #E4405F;
+  background-color: #edfa00ce;
 }
 .social-menu ul li:nth-child(3) a:hover{
-  background-color: #e6ea0a;
+  background-color: rgb(29, 77, 220);
 }
 .social-menu ul li:nth-child(4) a:hover{
-  background-color: rgb(1, 53, 210);
+  background-color: rgb(240, 148, 229);
 }
+
+.plug{
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .gitIcon{
+  width: 50vw;
+  height: 20vh;
+} */
 
 @media screen and (min-width: 900px) {
   .fbPost {
@@ -349,7 +365,7 @@ border: 1px solid rgba(0, 0, 0, 0.3) !important;
   /* LOGO */
   
   .newLog{
-    background-color: whitesmoke;
+    background-color: rgb(255, 255, 255);
     border-radius: 80%;
   }
   
@@ -372,6 +388,11 @@ border: 1px solid rgba(0, 0, 0, 0.3) !important;
   
   .aboutHeader > .homeAndAboutContainer > #homeNav,
   #homeNav + a {
+    color: rgb(255, 4, 255);
+  }
+  
+  .aboutHeader > .homeAndAboutContainer > #homeNav,
+  #homeNav + a + a {
     color: rgb(255, 4, 255);
   }
   
@@ -409,8 +430,8 @@ border: 1px solid rgba(0, 0, 0, 0.3) !important;
     
     
     text-align: center;
-    /* -webkit-text-stroke-width: 1.1px;
-    -webkit-text-stroke-color: rgba(10, 9, 10, 0.657); */
+    -webkit-text-stroke-width: 1.1px;
+    -webkit-text-stroke-color: rgba(10, 9, 10, 0.657);
     /* font-family: 'Kanit', sans-serif; */
   }
   .arrow{
@@ -551,8 +572,9 @@ border: 1px solid rgba(0, 0, 0, 0.3) !important;
   
   
   .card-header{
-    border-bottom: 2px groove rgba(255, 14, 203, 0) !important;
+    border-bottom: none thin rgba(255, 14, 203, 0) !important;
     color: rgb(243, 6, 243) !important;
+    background-color: #a206b600 !important;
     
   }
   
@@ -600,8 +622,69 @@ border: 1px solid rgba(0, 0, 0, 0.3) !important;
   .firstCaro{
     transition: all 1s;
   }
+  
+  
+  /* SOCIAL MEDIA ICONS */
+  .social-menu ul{
+    /* position: relative; */
+    /* top: 50%;
+    left: 50%; */
+    padding: 0;
+    margin: 0;
+    /* transform: translate(-50%, -50%); */
+    display: flex;
+  }
+  
+  .social-menu ul li{
+    list-style: none;
+    margin: 15px 15px 15px 0px;
+  }
+  
+  .social-menu ul li .fab{
+    font-size: 30px;
+    line-height: 60px;
+    transition: .3s;
+    color: rgb(255, 255, 255);
+  }
+  
+  .social-menu ul li .fab:hover{
+    color: #fff;
+  }
+  
+  .social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(91, 34, 83, 0.515);
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+  }
+  
+  .social-menu ul li a:hover{
+    transform: translate(0, -10%);
+  }
+  
+  .social-menu ul li:nth-child(1) a:hover{
+    background-color: #a106b6;
+  }
+  .social-menu ul li:nth-child(2) a:hover{
+    background-color: #edfa00ce;
+  }
+  .social-menu ul li:nth-child(3) a:hover{
+    background-color: rgb(29, 77, 220);
+  }
+  .social-menu ul li:nth-child(4) a:hover{
+    background-color: rgb(240, 148, 229);
+  }
+  
+  .plug{
+    flex-direction: column;
+    align-items: center;
+  }
 }
-
 
 
 

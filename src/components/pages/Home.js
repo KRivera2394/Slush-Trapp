@@ -19,78 +19,104 @@ import pic17 from "../images/pic17.JPG";
 import pic18 from "../images/pic18.JPG";
 import slushLogo from "../images/thirdLog.png";
 import Carousel from "react-bootstrap/Carousel";
-import { motion} from "framer-motion";
-
-
-
+import { motion } from "framer-motion";
 
 export default function Home() {
-
-  
-
   return (
-    <div
-    
-    
-    className="d-flex flex-column align-items-center mt-5">
+    <div className="d-flex flex-column align-items-center mt-5">
       {/* <img className="newLog" src={slushLogo} width="250" alt="logo"/> */}
       <motion.img
-    
-      initial={{ y: -1000}} 
-      animate={{y: 0}}
-       transition={{ delay: 0.3, duration: 1.0, type: 'spring', stiffness:70}}
-      className="newLog" src={slushLogo} width="250" alt="logo" />
-<div class="social-menu">
+        initial={{ y: -1000 }}
+        animate={{ y: 0 }}
+        transition={{
+          delay: 0.3,
+          duration: 1.0,
+          type: "spring",
+          stiffness: 70,
+        }}
+        className="newLog"
+        src={slushLogo}
+        width="250"
+        alt="logo"
+      />
+      <div class="social-menu">
         <ul>
-            <motion.li
-             initial={{ y: -1000}} 
-             animate={{y: 0}}
-              transition={{ delay: 0.3, duration: 1.0, type: 'tween'}}
-            
-            ><a href="https://www.instagram.com/slush_trap/" target="blank"><i class="fab fa-instagram"></i></a></motion.li>
-            <motion.li
-             initial={{ y: -1000}} 
-             animate={{y: 0}}
-              transition={{ delay: 0.4, duration: 1.0, type: 'tween'}}
-            
-            ><a href="https://www.linkedin.com/in/sanket-bodake-995b5b205/" target="blank"><i class="fab fa-snapchat"></i></a></motion.li>
-            <motion.li
-             initial={{ y: -1000}} 
-             animate={{y: 0}}
-              transition={{ delay: 0.5, duration: 1.0, type: 'tween'}}
-            
-            ><a href="https://www.facebook.com/SlushTrap/"><i class="fab fa-facebook" target="blank"></i></a></motion.li>
-            
-            <motion.li
-             initial={{ y: -1000}} 
-             animate={{y: 0}}
-              transition={{ delay: 0.6, duration: 1.0, type: 'tween'}}
-            
-            ><a href="https://github.com/krivera2394" target="blank"><i class="fab fa-github"/></a></motion.li>
+          <motion.li
+            initial={{ y: -1000 }}
+            animate={{ y: 0 }}
+            transition={{ delay: 0.3, duration: 1.0, type: "spring" }}
+          >
+            <a href="https://www.instagram.com/slush_trap/" target="blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </motion.li>
+          <motion.li
+            initial={{ y: -1000 }}
+            animate={{ y: 0 }}
+            transition={{ delay: 0.4, duration: 1.0, type: "spring" }}
+          >
+            <a href="https://www.snapchat.com/" target="blank">
+              <i class="fab fa-snapchat"></i>
+            </a>
+          </motion.li>
+          <motion.li
+            initial={{ y: -1000 }}
+            animate={{ y: 0 }}
+            transition={{ delay: 0.5, duration: 1.0, type: "spring" }}
+          >
+            <a href="https://www.facebook.com/SlushTrap/">
+              <i class="fab fa-facebook" target="blank"></i>
+            </a>
+          </motion.li>
+
+          <motion.li
+            initial={{ y: -1000 }}
+            animate={{ y: 0 }}
+            transition={{ delay: 0.6, duration: 1.0, type: "spring" }}
+          >
+            <a
+              href="https://uncorkedwinefestivals.com/tampa-wine-festival/"
+              target="blank"
+            >
+              <i class="fab fa-gulp" />
+            </a>
+          </motion.li>
         </ul>
-    </div>
+      </div>
       {/* <h1 className="homeHeading mb-4 ">SLUSH TRAP</h1> */}
       {/* <div className='lineDiv lineHead'> HEY </div> */}
 
       <motion.p
-      initial={{ y: -1000}} 
-      animate={{y: 0}}
-       transition={{ delay: 0.2, duration: 1.0, type: 'spring', stiffness:70}}
-      className="homeText px-3">
+        initial={{ y: -1000 }}
+        animate={{ y: 0 }}
+        transition={{
+          delay: 0.2,
+          duration: 1.0,
+          type: "spring",
+          stiffness: 70,
+        }}
+        className="homeText px-3"
+      >
         Check in with us below to see where we will be Today!
       </motion.p>
-      <motion.i 
-       initial={{ y: -1000}} 
-       animate={{y: 0}}
-        transition={{ delay: 0.1, duration: 1.0, type: 'spring', stiffness:70}}
-        
-      className="fa-solid fa-arrow-down homeText arrow"></motion.i>
+      <motion.i
+        initial={{ y: -1000 }}
+        animate={{ y: 0 }}
+        transition={{
+          delay: 0.1,
+          duration: 1.0,
+          type: "spring",
+          stiffness: 70,
+        }}
+        className="fa-solid fa-arrow-down homeText arrow"
+      ></motion.i>
 
-      <motion.div 
-      initial={{ x: -1500}} 
-      animate={{x: 0}}
-      transition={{ delay: 0.4, duration: 1.5, type: 'spring'}}
-      id="fDiv">
+      <motion.div
+        initial={{ x: -1500 }}
+        animate={{ x: 0 }}
+        transition={{ delay: 0.4, duration: 1.5, type: "spring" }}
+        id="fDiv"
+      >
         <iframe
           className="mb-3"
           title="fb"
@@ -164,11 +190,19 @@ export default function Home() {
             </Carousel.Item>
           </Carousel.Item>
         </Carousel>
-
-       
-
       </div>
-      
+      <div className="foot d-flex w-100 social-menu justify-content-center">
+        <ul>
+          <li className="d-flex plug">
+            
+            <a className="plug" href="https://www.instagram.com/slush_trap/" target="blank">
+              <i class="plug gitIcon fab fa-github"></i>
+              
+            </a>
+            Need a website?
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }

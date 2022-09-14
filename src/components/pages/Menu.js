@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function Menu() {
   return (
     <div>
-      <div id="menu">
+      <div>
         <h1 className="menuList homeHeading mb-5">MENU</h1>
       </div>
       <div className="menuCont d-flex">
