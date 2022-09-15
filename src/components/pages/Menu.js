@@ -7,7 +7,7 @@ export default function Menu() {
       <div>
         <h1 className="menuList homeHeading mb-5">MENU</h1>
       </div>
-      <div className="menuCont d-flex">
+      <div className="menuCont d-flex justify-content-center">
         <div className="card menuBack meB">
           <motion.div
             initial={{ y: -600 }}

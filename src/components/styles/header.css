@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: url(../images/slushBGPortrait.jpg);
+  background-image: url(../images/slushBGPortrait.jpg) ;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,7 +14,7 @@ body {
 .mainC{
   /* border-radius: 80%; */
   /* border: 1px solid beige; */
-  height: 35vh;
+  height: 50vh;
 }
 
 .newLog {
@@ -177,8 +177,11 @@ body {
 .menuCont {
   gap: 2%;
   flex-wrap: wrap;
+  flex-direction: column;
   
 }
+
+
 
 .scFlavors {
   color: rgb(253, 0, 253) !important;
@@ -193,9 +196,12 @@ body {
 }
 
 .menuBack {
- 
-  flex: 1 0 50%;
 
+  /* flex: 1 0 30%; */
+  width:35%;
+  font-size: 1.3em;
+align-content: center;
+align-self: center;
   margin-bottom: 5%;
   background-color: rgba(16, 13, 13, 0.504) !important;
   border-radius: 16px !important;
@@ -325,6 +331,11 @@ body {
 @media screen and (max-width: 1000px) {
   * {
     font-family: "Permanent Marker", cursive;
+  }
+  .mainC{
+    /* border-radius: 80%; */
+    /* border: 1px solid beige; */
+    height: 40vh;
   }
   
   body {
@@ -506,7 +517,9 @@ body {
   
   .menuBack {
    
-    flex: 1 0 50%;
+    /* flex: 1 0 50%; */
+    width:100%;
+    font-size: 1.1em;
   
     margin-bottom: 5%;
     background-color: rgba(16, 13, 13, 0.504) !important;

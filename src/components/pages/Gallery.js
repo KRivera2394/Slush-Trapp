@@ -17,10 +17,12 @@ import pic15 from "../images/pic15.JPG";
 import pic16 from "../images/pic16.JPG";
 import pic17 from "../images/pic17.JPG";
 import pic18 from "../images/pic18.JPG";
+import "../styles/header.css"
 // import slushLogo from "../images/thirdLog.png";
 
 export default function Gallery() {
   return (
+    
     <div>
       <h1 className="menuList homeHeading mb-5">Gallery</h1>
       <div className="d-flex justify-content-center galo">

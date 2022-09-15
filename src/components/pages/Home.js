@@ -20,6 +20,7 @@ import pic3 from "../images/pic3.JPG";
 import slushLogo from "../images/thirdLog.png";
 import Carousel from "react-bootstrap/Carousel";
 import { motion } from "framer-motion";
+import "../styles/header.css"
 
 export default function Home() {
   const [index, setIndex] = useState(0);
@@ -31,49 +32,9 @@ export default function Home() {
     <div className='mt-5'>
    
       {/* <img className="newLog" src={slushLogo} width="250" alt="logo"/> */}
-      <section className='d-flex justify-content-center '>
-    <Carousel className='galCaro' activeIndex={index} onSelect={handleSelect}>
-      <Carousel.Item className='d-flex justify-content-center'>
-      <img
-       
-        className="newLog"
-        src={slushLogo}
-        width="250"
-        alt="logo"
-      />
-       
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100 mainC"
-          src={pic1}
-          alt="Second slide"
-        />
-
-     
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100 mainC"
-          src={pic2}
-          alt="Second slide"
-        />
-
-       
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100 mainC"
-          src={pic3}
-          alt="Third slide"
-        />
-
-        
-      </Carousel.Item>
-    </Carousel>
-    </section>
+    
     <div className="d-flex flex-column align-items-center mt-3">
-      {/* <motion.img
+      <motion.img
         initial={{ y: -1000 }}
         animate={{ y: 0 }}
         transition={{
@@ -86,7 +47,7 @@ export default function Home() {
         src={slushLogo}
         width="250"
         alt="logo"
-      /> */}
+      />
       <div class="social-menu">
         <ul>
           <motion.li
@@ -182,47 +143,42 @@ export default function Home() {
       {/* <div className='lineDiv'> HEY </div> */}
       </div>
       <div>
-      {/* <section className="d-flex justify-content-center" >
-    <Carousel className="" activeIndex={index} onSelect={handleSelect}>
+     
+      <motion.section
+        initial={{ x: -1500 }}
+        animate={{ x: 0 }}
+        transition={{ delay: 0.4, duration: 1.5, type: "spring" }}className='d-flex justify-content-center '>
+    <Carousel className='galCaro' activeIndex={index} onSelect={handleSelect}>
+     
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-100 mainC"
           src={pic1}
-          alt="First slide"
+          alt="Second slide"
         />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
+
+     
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-100 mainC"
           src={pic2}
           alt="Second slide"
         />
 
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
+       
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-100 mainC"
           src={pic3}
           alt="Third slide"
         />
 
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
+        
       </Carousel.Item>
     </Carousel>
-    </section> */}
+    </motion.section>
     </div>
       <div className="foot d-flex w-100 social-menu justify-content-center">
         <ul>
