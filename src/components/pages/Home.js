@@ -195,7 +195,7 @@ export default function Home() {
         <ul>
           <li className="d-flex plug">
             
-            <a className="plug" href="https://www.instagram.com/slush_trap/" target="blank">
+            <a className="plug" href="https://www.linkedin.com/in/keanu-rivera-b37438237/" target="blank">
               <i class="plug gitIcon fab fa-github"></i>
               
             </a>
