@@ -10,6 +10,7 @@ import '../components/styles/header.css'
 function BasicExample({ currentPage, handlePageChange }) {
   return (
     <Navbar className='bgN' collapseOnSelect  expand="xl">
+      
       <Container 
       
       className='wholeNav'>
@@ -20,8 +21,9 @@ function BasicExample({ currentPage, handlePageChange }) {
         <Navbar.Collapse className='aboutHeader' id="basic-navbar-nav">
           <Nav className='homeAndAboutContainer'>
             <Nav.Link id='homeNav' href="#home" onClick={() => handlePageChange('Home')} className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'} >Home</Nav.Link>
-            <Nav.Link className='aboutHeader'  href="#menu"
-          onClick={() => handlePageChange('Menu')}>Menu</Nav.Link>
+            <Nav.Link className= 'aboutHeader'
+          onClick={() => handlePageChange('Menu')}
+          >Menu</Nav.Link>
           <Nav.Link className='aboutHeader'  href="#gallery"
           onClick={() => handlePageChange('Gallery')}>Gallery</Nav.Link>
             

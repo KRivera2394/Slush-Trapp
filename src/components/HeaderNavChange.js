@@ -3,12 +3,12 @@ import React, { useState } from 'react';
 import Home from './pages/Home';
 import Menu from './pages/Menu';
 import Gallery from './pages/Gallery';
-import Contact from './pages/Contact';
+// import Contact from './pages/Contact';
 import Nav from './BasicExample';
 
 
 export default function HeaderNavChange() {
-  const [currentPage, setCurrentPage] = useState('Home');
+  const [currentPage, setCurrentPage] = useState(0);
 
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   const renderPage = () => {
@@ -16,12 +16,15 @@ export default function HeaderNavChange() {
       return <Home />;
     }
     if (currentPage === 'Menu') {
+      
+      
       return <Menu />;
     }
     if (currentPage === 'Gallery') {
       return <Gallery />;
     }
-    return <Contact />;
+   
+    return <Home />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
