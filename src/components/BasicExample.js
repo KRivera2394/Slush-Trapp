@@ -6,11 +6,16 @@ import '../components/styles/header.css'
 
 
 
+
 function BasicExample({ currentPage, handlePageChange }) {
   return (
-    <Navbar collapseOnSelect  bg="dark" expand="xl">
-      <Container className='wholeNav'>
-        <Navbar.Brand className='headerTitle'  href="#home">Slush Trap</Navbar.Brand>
+    <Navbar className='bgN' collapseOnSelect  expand="xl">
+      <Container 
+      
+      className='wholeNav'>
+        <Navbar
+        
+        className='headerTitle'  >Slush Trap</Navbar>
         <Navbar.Toggle className='outHeader' aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className='aboutHeader' id="basic-navbar-nav">
           <Nav className='homeAndAboutContainer'>
@@ -18,7 +23,7 @@ function BasicExample({ currentPage, handlePageChange }) {
             <Nav.Link className='aboutHeader'  href="#menu"
           onClick={() => handlePageChange('Menu')}>Menu</Nav.Link>
           <Nav.Link className='aboutHeader'  href="#blog"
-          onClick={() => handlePageChange('Blog')}>Gallery</Nav.Link>
+          onClick={() => handlePageChange('Gallery')}>Gallery</Nav.Link>
             
             {/* <Nav.Link className='aboutHeader'  href="#about"
           onClick={() => handlePageChange('About')}>About</Nav.Link> */}

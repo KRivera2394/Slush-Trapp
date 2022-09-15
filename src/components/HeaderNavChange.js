@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-// import NavTabs from './NavTabs';
+// import HeaderNavTabs from './HeaderNavTabs';
 import Home from './pages/Home';
 import Menu from './pages/Menu';
-import Blog from './pages/Blog';
+import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
-import BasicExample from './BasicExample';
+import Nav from './BasicExample';
 
 
-export default function PortfolioContainer() {
+export default function HeaderNavChange() {
   const [currentPage, setCurrentPage] = useState('Home');
 
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
@@ -18,8 +18,8 @@ export default function PortfolioContainer() {
     if (currentPage === 'Menu') {
       return <Menu />;
     }
-    if (currentPage === 'Blog') {
-      return <Blog />;
+    if (currentPage === 'Gallery') {
+      return <Gallery />;
     }
     return <Contact />;
   };
@@ -35,7 +35,7 @@ export default function PortfolioContainer() {
       
       </div>
       <div>
-      <BasicExample currentPage={currentPage} handlePageChange={handlePageChange} />
+      <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
       </div>
       </div>

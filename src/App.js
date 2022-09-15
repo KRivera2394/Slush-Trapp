@@ -1,6 +1,6 @@
 import React from "react";
-import PortfolioContainer from "./components/PortfolioContainer";
+import HeaderNavChange from "./components/HeaderNavChange";
 
-const App = () => <PortfolioContainer />;
+const App = () => <HeaderNavChange/>;
 
 export default App;

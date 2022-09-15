@@ -1,31 +1,79 @@
-import React from "react";
+import React, { useState } from 'react';
 import pic1 from "../images/pic1.JPG";
 import pic2 from "../images/pic2.JPG";
 import pic3 from "../images/pic3.JPG";
-import pic4 from "../images/pic4.JPG";
-import pic5 from "../images/pic5.JPG";
-import pic6 from "../images/pic6.JPG";
-import pic7 from "../images/pic7.JPG";
-import pic8 from "../images/pic8.JPG";
-import pic9 from "../images/pic15.JPG";
-import pic10 from "../images/pic10.JPG";
-import pic11 from "../images/pic11.JPG";
-import pic12 from "../images/pic12.JPG";
-import pic13 from "../images/pic13.JPG";
-import pic14 from "../images/pic14.JPG";
-import pic15 from "../images/pic15.JPG";
-import pic16 from "../images/pic16.JPG";
-import pic17 from "../images/pic17.JPG";
-import pic18 from "../images/pic18.JPG";
+// import pic4 from "../images/pic4.JPG";
+// import pic5 from "../images/pic5.JPG";
+// import pic6 from "../images/pic6.JPG";
+// import pic7 from "../images/pic7.JPG";
+// import pic8 from "../images/pic8.JPG";
+// import pic9 from "../images/pic15.JPG";
+// import pic10 from "../images/pic10.JPG";
+// import pic11 from "../images/pic11.JPG";
+// import pic12 from "../images/pic12.JPG";
+// import pic13 from "../images/pic13.JPG";
+// import pic14 from "../images/pic14.JPG";
+// import pic15 from "../images/pic15.JPG";
+// import pic16 from "../images/pic16.JPG";
+// import pic17 from "../images/pic17.JPG";
+// import pic18 from "../images/pic18.JPG";
 import slushLogo from "../images/thirdLog.png";
 import Carousel from "react-bootstrap/Carousel";
 import { motion } from "framer-motion";
 
 export default function Home() {
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  }
   return (
-    <div className="d-flex flex-column align-items-center mt-5">
+    <div className='mt-5'>
+   
       {/* <img className="newLog" src={slushLogo} width="250" alt="logo"/> */}
-      <motion.img
+      <section className='d-flex justify-content-center '>
+    <Carousel className='galCaro' activeIndex={index} onSelect={handleSelect}>
+      <Carousel.Item className='d-flex justify-content-center'>
+      <img
+       
+        className="newLog"
+        src={slushLogo}
+        width="250"
+        alt="logo"
+      />
+       
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100 mainC"
+          src={pic1}
+          alt="Second slide"
+        />
+
+     
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100 mainC"
+          src={pic2}
+          alt="Second slide"
+        />
+
+       
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100 mainC"
+          src={pic3}
+          alt="Third slide"
+        />
+
+        
+      </Carousel.Item>
+    </Carousel>
+    </section>
+    <div className="d-flex flex-column align-items-center mt-3">
+      {/* <motion.img
         initial={{ y: -1000 }}
         animate={{ y: 0 }}
         transition={{
@@ -38,7 +86,7 @@ export default function Home() {
         src={slushLogo}
         width="250"
         alt="logo"
-      />
+      /> */}
       <div class="social-menu">
         <ul>
           <motion.li
@@ -47,25 +95,25 @@ export default function Home() {
             transition={{ delay: 0.3, duration: 1.0, type: "spring" }}
           >
             <a href="https://www.instagram.com/slush_trap/" target="blank">
-              <i class="fab fa-instagram"></i>
+              <i className="fab fa-instagram"></i>
             </a>
           </motion.li>
-          <motion.li
+          {/* <motion.li
             initial={{ y: -1000 }}
             animate={{ y: 0 }}
             transition={{ delay: 0.4, duration: 1.0, type: "spring" }}
           >
-            <a href="https://www.snapchat.com/" target="blank">
-              <i class="fab fa-snapchat"></i>
+            <a href="https://www.snapchat.com/" target="blank">MENU
+             
             </a>
-          </motion.li>
+          </motion.li> */}
           <motion.li
             initial={{ y: -1000 }}
             animate={{ y: 0 }}
             transition={{ delay: 0.5, duration: 1.0, type: "spring" }}
           >
             <a href="https://www.facebook.com/SlushTrap/">
-              <i class="fab fa-facebook" target="blank"></i>
+              <i className="fab fa-facebook" target="blank"></i>
             </a>
           </motion.li>
 
@@ -78,7 +126,7 @@ export default function Home() {
               href="https://uncorkedwinefestivals.com/tampa-wine-festival/"
               target="blank"
             >
-              <i class="fab fa-gulp" />
+              <i className="fab fa-gulp" />
             </a>
           </motion.li>
         </ul>
@@ -132,77 +180,64 @@ export default function Home() {
 
       {/* <h1 className="homeHeading mb-1">GALLERY</h1> */}
       {/* <div className='lineDiv'> HEY </div> */}
-
-      <div className="d-flex">
-        <Carousel fade={true} className="theCaro">
-          <Carousel.Item>
-            <img className="homePic" src={pic1} alt="pic" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="homePic " src={pic2} alt="pic" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="homePic " src={pic3} alt="pic" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="homePic" src={pic4} alt="pic" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="homePic" src={pic5} alt="pic" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="homePic" src={pic6} alt="pic" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="homePic" src={pic7} alt="pic" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="homePic" src={pic8} alt="pic" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="homePic" src={pic10} alt="pic" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="homePic" src={pic11} alt="pic" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="homePic" src={pic12} alt="pic" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="homePic" src={pic13} alt="pic" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="homePic" src={pic14} alt="pic" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="homePic" src={pic15} alt="pic" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="homePic" src={pic16} alt="pic" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="homePic" src={pic17} alt="pic" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="homePic" src={pic18} alt="pic" />
-            <Carousel.Item>
-              <img className="homePic" src={pic9} alt="pic" />
-            </Carousel.Item>
-          </Carousel.Item>
-        </Carousel>
       </div>
+      <div>
+      {/* <section className="d-flex justify-content-center" >
+    <Carousel className="" activeIndex={index} onSelect={handleSelect}>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={pic1}
+          alt="First slide"
+        />
+        <Carousel.Caption>
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={pic2}
+          alt="Second slide"
+        />
+
+        <Carousel.Caption>
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={pic3}
+          alt="Third slide"
+        />
+
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+    </section> */}
+    </div>
       <div className="foot d-flex w-100 social-menu justify-content-center">
         <ul>
           <li className="d-flex plug">
             
             <a className="plug" href="https://www.linkedin.com/in/keanu-rivera-b37438237/" target="blank">
-              <i class="plug gitIcon fab fa-github"></i>
+              <i class="plug gitIcon fab fa-linkedin"></i>
               
             </a>
             Need a website?
           </li>
         </ul>
       </div>
-    </div>
+      </div>
+    
   );
-}
+      }
+    

@@ -19,11 +19,11 @@ import pic17 from "../images/pic17.JPG";
 import pic18 from "../images/pic18.JPG";
 // import slushLogo from "../images/thirdLog.png";
 
-export default function Blog() {
+export default function Gallery() {
   return (
     <div>
       <h1 className="menuList homeHeading mb-5">Gallery</h1>
-      
+      <div className="d-flex justify-content-center galo">
         <img className="homePic" src={pic1} alt="pic" />
         <img className="homePic " src={pic2} alt="pic" />
         <img className="homePic " src={pic3} alt="pic" />
@@ -42,7 +42,7 @@ export default function Blog() {
         <img className="homePic" src={pic18} alt="pic" />
         <img className="homePic" src={pic4} alt="pic" />
         <img className="homePic" src={pic5} alt="pic" />
-       
+        </div>
      
     </div>
   );
