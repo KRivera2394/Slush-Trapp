@@ -17,7 +17,7 @@ export default function HeaderNavChange() {
     }
     if (currentPage === 'Menu') {
       
-      
+     
       return <Menu />;
     }
     if (currentPage === 'Gallery') {
